@@ -30,7 +30,7 @@ Install requirements
 
 2. Prepare ```run.sh``` file as follows
 
-```python run_valid.py --config_file <your_config_file> --device_id <ID of GPU machine>```
+```python run_valid.py --dataset <dataset_name> --config_file <your_config_file> --device_id <ID of GPU machine>```
 
 3. To run training and evaluation
 
@@ -50,7 +50,7 @@ Next, we tune other hyper-parameters, which have data-dependent influence
 
 Then, we tune other parameters: the number of interests per user `kfac`, the number of iterative latent attention steps `num_iters`. Please follow the experimental results in the paper.
 
-*Given the tune hyper-parameters, setting the `num_iters` to `1` will reproduce the results of MacridVAE* 
+*Given the tuned hyper-parameters, setting the `num_iters` to `1` will reproduce the results of MacridVAE* 
 
 
 ### Notes on RecBole setting to reproduce results
