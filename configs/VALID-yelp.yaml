@@ -1,0 +1,20 @@
+embedding_size: 64
+dropout_prob: 0.5
+kfac: 4
+num_iters: 2  # set this number to 1 then the model is identical to MacridVAE
+nogb: False
+std: 0.05
+encoder_hidden_size: [64]
+tau: 0.1
+tau_dec: 0.1
+anneal_cap: 0.2
+total_anneal_steps: 10000
+reg_weights: [0.0, 0.0]
+dataset: 'yelp'
+model: 'VALID'
+learner: 'adam'
+learning_rate: 0.001
+seed: 42
+eval_batch_size: 11300000
+stopping_step: 15
+normalize_score: True
